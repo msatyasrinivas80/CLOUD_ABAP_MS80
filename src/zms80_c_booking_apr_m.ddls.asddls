@@ -1,7 +1,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Booking Approval'
 @UI: { headerInfo: { typeName: 'Booking',
-                     typeNamePlural: 'Bookings',
+                     typeNamePlural: 'Bookings..!',
                      title: { type: #STANDARD,
                               value: 'BookingId' } } }
 @Search.searchable: true
