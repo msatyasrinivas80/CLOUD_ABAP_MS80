@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service Definition Travel'
+define service ZMS80_SD_TRAVEL_M {
+  expose ZMS80_C_TRAVEL_M;
+  expose ZMS80_C_BOOKING_M;
+  expose ZMS80_C_BOOKSUPL_M;
+}

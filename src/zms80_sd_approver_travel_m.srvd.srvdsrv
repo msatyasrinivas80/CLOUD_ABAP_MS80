@@ -1,0 +1,5 @@
+@EndUserText.label: 'SD for Approver Travel'
+define service ZMS80_SD_APPROVER_TRAVEL_M {
+  expose ZMS80_C_TRAVEL_APR_M;
+  expose ZMS80_C_BOOKING_APR_M;
+}
