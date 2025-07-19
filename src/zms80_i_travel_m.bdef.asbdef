@@ -1,9 +1,10 @@
-managed; //implementation in class zbp_ms80_i_travel_m unique;
+managed implementation in class zcl_bp_ms80_i_travel_m unique;
 strict ( 2 );
 
 define behavior for ZMS80_I_TRAVEL_M alias Travel
 implementation in class zcl_bp_ms80_i_travel_m unique
 persistent table zms80_travel_m
+with additional save
 lock master
 authorization master ( instance )
 etag master LastChangedAt

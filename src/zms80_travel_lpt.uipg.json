@@ -1,0 +1,26 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Launchpad Page Templace for Travel",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "title": "Launchpad Page Templace for Travel"
+  },
+  "sections": [
+    {
+      "id": "SECTION_1",
+      "title": "Travel",
+      "visualizations": [
+        {
+          "id": "APP_DESCRIPTOR_ITEM_TRAVEL",
+          "ladiAssignment": {
+            "ladiId": "ZMS80_TRAVEL_UI5R",
+            "tileId": "UI5R_DC804341B6E45A6869D977F398F22C51ED646B8C_AL"
+          }
+        }
+      ]
+    }
+  ]
+}

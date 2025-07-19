@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "ZMS80 Travel App"
+  },
+  "ui5AppDetails": {
+    "appId": "zms80travel"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_DC804341B6E45A6869D977F398F22C51ED646B8C_TM",
+    "semanticObject": "zms80_travel",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_DC804341B6E45A6869D977F398F22C51ED646B8C_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZMS80 Travel App",
+        "subtitle": "ZMS80 Travel App Subtitle"
+      }
+    }
+  ]
+}
