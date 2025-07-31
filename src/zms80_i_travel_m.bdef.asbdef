@@ -93,7 +93,8 @@ early numbering
 
 define behavior for ZMS80_I_BOOKSUPL_M alias BookSupl
 implementation in class zcl_bp_ms80_i_booksupl_m unique
-persistent table zms80_booksupl_m
+//persistent table zms80_booksupl_m
+with unmanaged save with full data
 lock dependent by _Travel
 authorization dependent by _Travel
 etag master LastChangedAt

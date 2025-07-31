@@ -1,0 +1,6 @@
+@EndUserText.label: 'F4 Help'
+define service ZMS80_F4_TRAVEL {
+  expose ZMS80_C_TRAVEL_M;
+  expose ZMS80_C_BOOKING_M;
+  expose ZMS80_C_BOOKSUPL_M;
+}

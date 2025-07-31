@@ -37,6 +37,10 @@ annotate entity ZMS80_C_TRAVEL_M with
   @UI.textArrangement: #TEXT_ONLY
   @Consumption.valueHelpDefinition: [{ entity: { name: '/DMO/I_Customer', element: 'CustomerID' } }]
   CustomerId;
+//  @UI.fieldGroup: [{ position: 30, value: '_Customer.CustomerID' }]
+//  @Consumption.filter: { selectionType: #RANGE, multipleSelections: true }
+//  
+//  _Customer;
   // CustomerName;
   @UI.lineItem: [{ position: 40 }]
   @UI.identification: [{ position: 40 }]

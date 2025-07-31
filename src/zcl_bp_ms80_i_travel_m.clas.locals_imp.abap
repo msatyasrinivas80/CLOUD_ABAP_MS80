@@ -92,6 +92,47 @@ CLASS lsc_zms80_i_travel_m IMPLEMENTATION.
       ENDLOOP.
       INSERT zms80_log_trvl_m FROM TABLE @lt_travel_log.
     ENDIF.
+
+*   BookingSupplement SAVE
+    DATA: lt_booksupl TYPE STANDARD TABLE OF zms80_booksupl_m.
+
+    IF  create-booksupl IS NOT INITIAL.
+      lt_booksupl = VALUE #( FOR ls_booksupl IN create-booksupl (
+                                 travel_id = ls_booksupl-TravelId
+                                 booking_id = ls_booksupl-BookingId
+                                 booking_supplement_id = ls_booksupl-BookingSupplementId
+                                 supplement_id = ls_booksupl-SupplementId
+                                 price = ls_booksupl-Price
+                                 currency_code = ls_booksupl-CurrencyCode
+                                 last_changed_at = ls_booksupl-LastChangedAt ) ).
+
+      INSERT zms80_booksupl_m FROM TABLE @lt_booksupl.
+
+    ENDIF.
+    IF  update-booksupl IS NOT INITIAL.
+      lt_booksupl = VALUE #( FOR ls_booksupl IN update-booksupl (
+                                     travel_id = ls_booksupl-TravelId
+                                     booking_id = ls_booksupl-BookingId
+                                     booking_supplement_id = ls_booksupl-BookingSupplementId
+                                     supplement_id = ls_booksupl-SupplementId
+                                     price = ls_booksupl-Price
+                                     currency_code = ls_booksupl-CurrencyCode
+                                     last_changed_at = ls_booksupl-LastChangedAt ) ).
+
+      UPDATE zms80_booksupl_m FROM TABLE @lt_booksupl.
+
+    ENDIF.
+    IF  delete-booksupl IS NOT INITIAL.
+      lt_booksupl = VALUE #( FOR ls_booksupldel IN delete-booksupl (
+                                     travel_id = ls_booksupldel-TravelId
+                                     booking_id = ls_booksupldel-BookingId
+                                     booking_supplement_id = ls_booksupldel-BookingSupplementId
+                                      ) ).
+
+      DELETE zms80_booksupl_m FROM TABLE @lt_booksupl.
+
+    ENDIF.
+
   ENDMETHOD.
 
 ENDCLASS.
