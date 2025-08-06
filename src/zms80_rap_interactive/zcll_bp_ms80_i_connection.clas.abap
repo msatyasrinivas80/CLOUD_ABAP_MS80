@@ -1,0 +1,5 @@
+CLASS zcll_bp_ms80_i_connection DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zms80_i_connection.
+ENDCLASS.
+
+CLASS zcll_bp_ms80_i_connection IMPLEMENTATION.
+ENDCLASS.

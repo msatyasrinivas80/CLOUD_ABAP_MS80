@@ -1,0 +1,39 @@
+@Metadata.layer: #CORE
+annotate entity ZMS80_I_CONNECTION with
+{
+  @UI.facet: [{ id: 'Flight Connection',
+    purpose: #STANDARD,
+    position: 10,
+    label: 'Connection',
+    type: #IDENTIFICATION_REFERENCE }]
+  CarrierId;
+  @UI.lineItem: [{ position: 20 }]
+  @Search.defaultSearchElement: true
+  @UI.identification: [{ position: 20 }]
+  ConnectionId;
+  @UI.lineItem: [{ position: 30 }]
+  @Search.defaultSearchElement: true
+  @UI.identification: [{ position: 30 }]
+  AirportFromId;
+  @UI.lineItem: [{ position: 40 }]
+  @Search.defaultSearchElement: true
+  @UI.identification: [{ position: 40 }]
+  AirportToId;
+  @UI.lineItem: [{ position: 50 }]
+  @Search.defaultSearchElement: true
+  @UI.identification: [{ position: 50 }]
+  DepartureTime;
+  @UI.lineItem: [{ position: 60 }]
+  @Search.defaultSearchElement: true
+  @UI.identification: [{ position: 60 }]
+  ArrivalTime;
+  @UI.lineItem: [{ position: 70 }]
+  @Search.defaultSearchElement: true
+  @UI.identification: [{ position: 70 }]
+  Distance;
+  @UI.lineItem: [{ position: 80 }]
+  @Search.defaultSearchElement: true
+  @UI.identification: [{ position: 80 }]
+  DistanceUnit;
+
+}

@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service Definition of Flight'
+define service ZMS80_SD_FLIGHT {
+  expose ZMS80_I_CONNECTION;
+  expose ZMS80_I_FLIGHT_R;
+  expose ZMS80_I_CARRIER_R;
+}

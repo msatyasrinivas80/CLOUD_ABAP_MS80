@@ -1,0 +1,14 @@
+managed implementation in class zcll_bp_ms80_i_connection unique;
+strict ( 2 );
+
+define behavior for ZMS80_I_CONNECTION //alias <alias_name>
+persistent table /dmo/connection
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) CarrierId, ConnectionId;
+}
