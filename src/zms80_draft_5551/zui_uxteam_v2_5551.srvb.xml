@@ -35,6 +35,20 @@
           </CONTENT>
          </BIND_TYPE_DATA>
         </item>
+        <item>
+         <SERVICE_VERSION>0002</SERVICE_VERSION>
+         <RELEASE_STATE>NOT_RELEASED</RELEASE_STATE>
+         <SRVD_REF>
+          <URI>/sap/bc/adt/ddic/srvd/sources/z_expose_team_5551</URI>
+          <TYPE>SRVD/SRV</TYPE>
+          <NAME>Z_EXPOSE_TEAM_5551</NAME>
+         </SRVD_REF>
+         <BIND_TYPE_DATA>
+          <CONTENT>
+           <ENCODING>base64</ENCODING>
+          </CONTENT>
+         </BIND_TYPE_DATA>
+        </item>
        </SERVICE_CONTENT>
       </item>
      </SERVICES>

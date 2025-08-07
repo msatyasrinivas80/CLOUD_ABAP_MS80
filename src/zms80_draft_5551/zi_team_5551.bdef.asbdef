@@ -1,0 +1,36 @@
+managed;
+//strict ( 2 );
+with draft;
+
+define behavior for ZI_TEAM_5551 alias Team
+implementation in class zcl_bp_i_team_5551 unique
+persistent table zrap_team_5551
+draft table zdr_team_5551
+lock master total etag LastChangedAt
+authorization master ( instance )
+etag master LocalLastChangedAt
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) Firstname;
+  field ( readonly ) Active, Salary;
+  field ( readonly ) CreatedBy, LastChangedAt, LocalLastChangedAt;
+
+  action ( features : instance ) setActive result [1] $self;
+  determination changeSalary on save { field Role; }
+  validation validateAge on save { field Age; create; }
+
+  mapping for zrap_team_5551
+    {
+      Firstname          = firstname;
+      Lastname           = lastname;
+      Age                = age;
+      Role               = role;
+      Salary             = salary;
+      Active             = active;
+      CreatedBy          = createdby;
+      LastChangedAt      = lastchangedat;
+      LocalLastChangedAt = locallastchangedat;
+    }
+}

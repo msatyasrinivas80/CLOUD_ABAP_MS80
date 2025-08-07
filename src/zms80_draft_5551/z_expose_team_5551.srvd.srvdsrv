@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition TEAM'
+define service Z_EXPOSE_TEAM_5551 {
+  expose ZI_TEAM_5551 as Team;
+}
